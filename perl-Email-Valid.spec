@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Email
-%define	pnam	Valid
+%define		pdir	Email
+%define		pnam	Valid
 Summary:	Email::Valid - module determines whether an email address is valid
 Summary(pl):	Email::Valid - modu³ sprawdzaj±cy poprawno¶æ adresu e-mail
 Name:		perl-Email-Valid
