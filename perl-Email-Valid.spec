@@ -32,7 +32,7 @@ opcjonalnie, czy istnieje host przyjmuj±cy pocztê.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
