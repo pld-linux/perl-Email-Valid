@@ -4,14 +4,14 @@
 Summary:	This module determines whether an email address is valid
 Summary(pl):	Modu³ sprawdzaj±cy poprawno¶æ adresu e-mail
 Name:		perl-%{pdir}-%{pnam}
-Version:	0.13
-Release:	4
+Version:	0.14
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
-BuildRequires:	libpcap-devel
+BuildRequires:	perl-MailTools
+BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
