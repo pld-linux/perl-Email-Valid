@@ -3,7 +3,7 @@
 %define	pnam	Valid
 Summary:	Email::Valid - module determines whether an email address is valid
 Summary(pl):	Email::Valid - modu³ sprawdzaj±cy poprawno¶æ adresu e-mail
-Name:		perl-%{pdir}-%{pnam}
+Name:		perl-Email-Valid
 Version:	0.15
 Release:	1
 # same as perl
