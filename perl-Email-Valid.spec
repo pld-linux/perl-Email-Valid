@@ -1,12 +1,11 @@
 %include	/usr/lib/rpm/macros.perl
-%define         pdir Email
-%define         pnam Valid
-
+%define		pdir	Email
+%define		pnam	Valid
 Summary:	This module determines whether an email address is valid
 Summary(pl):	Modu³ sprawdzaj±cy poprawno¶æ adresu e-mail
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.13
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -35,7 +34,6 @@ perl Makefile.PL
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-gzip -9nf README Changes
 find $RPM_BUILD_ROOT -name .packlist | xargs -r rm -f
 
 %clean
@@ -43,6 +41,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_sitelib}/%{pdir}/%{pnam}.pm
+%doc README Changes
+%{perl_sitelib}/Email
 %{_mandir}/man3/*
-%doc *.gz
