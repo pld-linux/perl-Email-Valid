@@ -3,9 +3,10 @@
 %define         pnam Valid
 
 Summary:	This module determines whether an email address is valid
+Summary(pl):	Modu³ sprawdzaj±cy poprawno¶æ adresu e-mail
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.13
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -18,8 +19,12 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This module determines whether an email address is well-formed, and                                    
+This module determines whether an email address is well-formed, and
 optionally, whether a mail host exists for the domain.
+
+%description -l pl
+Ten modu³ sprawdza czy adres e-mail jest poprawnie zapisany i,
+opcjonalnie, czy istnieje host przyjmuj±cy pocztê.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
