@@ -12,7 +12,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	371b1552b81b93ffbf89cf2b1c1376c5
 BuildRequires:	perl-devel >= 5.6
-%if %{!?_without_tests:1}0
+%if %{with tests}
 BuildRequires:	perl-MailTools
 %endif
 BuildRequires:	rpm-perlprov >= 4.1-13
