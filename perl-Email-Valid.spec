@@ -7,7 +7,7 @@ Name:		perl-%{pdir}-%{pnam}
 Version:	0.15
 Release:	1
 # same as perl
-License:	GPL/Artistic
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	371b1552b81b93ffbf89cf2b1c1376c5
