@@ -6,7 +6,7 @@ Summary:	This module determines whether an email address is valid
 Summary(pl):	Modu³ sprawdzaj±cy poprawno¶æ adresu e-mail
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.13
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
