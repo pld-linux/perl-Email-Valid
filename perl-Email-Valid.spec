@@ -2,7 +2,7 @@
 %define		pdir	Email
 %define		pnam	Valid
 Summary:	Email::Valid - module determines whether an email address is valid
-Summary(pl.UTF-8):   Email::Valid - moduł sprawdzający poprawność adresu e-mail
+Summary(pl.UTF-8):	Email::Valid - moduł sprawdzający poprawność adresu e-mail
 Name:		perl-Email-Valid
 Version:	0.15
 Release:	1
