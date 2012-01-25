@@ -1,15 +1,22 @@
+#
+# Conditional build:
+%bcond_without	tests		# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Email
 %define		pnam	Valid
 Summary:	Email::Valid - module determines whether an email address is valid
 Summary(pl.UTF-8):	Email::Valid - moduł sprawdzający poprawność adresu e-mail
 Name:		perl-Email-Valid
-Version:	0.185
+Version:	0.186
 Release:	1
+# same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	8d5b4eea30be619ef9fe966c77e08b68
+# Source0-md5:	e21911bc5b14e0a1c8f17cb528826546
+# generic URL, check or change before uncommenting
+#URL:		http://search.cpan.org/dist/Email-Valid/
 BuildRequires:	perl-devel >= 1:5.8.0
 %if %{with tests}
 BuildRequires:	perl-MailTools
@@ -34,10 +41,12 @@ opcjonalnie, czy istnieje host przyjmujący pocztę.
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
+%{__make} pure_install \
 	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
@@ -45,6 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README Changes
-%{perl_vendorlib}/%{pdir}/*.pm
+%doc Changes README
+%{perl_vendorlib}/Email/*.pm
 %{_mandir}/man3/*
