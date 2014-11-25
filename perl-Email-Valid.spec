@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Email
 %define		pnam	Valid
+%include	/usr/lib/rpm/macros.perl
 Summary:	Email::Valid - module determines whether an email address is valid
 Summary(pl.UTF-8):	Email::Valid - moduł sprawdzający poprawność adresu e-mail
 Name:		perl-Email-Valid
@@ -15,8 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	190b9293fde117c7f8ce30058c79745f
-# generic URL, check or change before uncommenting
-#URL:		http://search.cpan.org/dist/Email-Valid/
+URL:		http://search.cpan.org/dist/Email-Valid/
 BuildRequires:	perl-devel >= 1:5.8.0
 %if %{with tests}
 BuildRequires:	perl-MailTools
