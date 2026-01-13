@@ -8,7 +8,7 @@ Summary:	Email::Valid - module determines whether an email address is valid
 Summary(pl.UTF-8):	Email::Valid - moduł sprawdzający poprawność adresu e-mail
 Name:		perl-Email-Valid
 Version:	0.187
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
